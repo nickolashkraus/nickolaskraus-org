@@ -1,3 +1,22 @@
-baseURL = "http://example.org/"
+baseURL = "https://nickolaskraus.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Nickolas Kraus"
+author = "Nickolas Kraus"
+canonifyurls = true
+theme = "black-and-light-2"
+
+pygmentsstyle       = "bw"
+pygmentscodefences  = true
+
+[params]
+  sitename = "Nickolas Kraus"
+
+[[menu.main]]
+    name = "About"
+    url  = ""
+[[menu.main]]
+    name = "Projects"
+    url  = ""
+[[menu.main]]
+    name = "Resume"
+    url  = ""

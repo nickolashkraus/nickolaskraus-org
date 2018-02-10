@@ -5,18 +5,22 @@ author = "Nickolas Kraus"
 canonifyurls = true
 theme = "black-and-light-2"
 
-pygmentsstyle       = "bw"
+pygmentsStyle       = "tango"
 pygmentscodefences  = true
 
 [params]
   sitename = "Nickolas Kraus"
+  dateFormat = "January 2, 2006"
 
 [[menu.main]]
     name = "About"
-    url  = ""
+    url  = "/about"
 [[menu.main]]
-    name = "Projects"
-    url  = ""
+    name = "Articles"
+    url  = "/articles"
 [[menu.main]]
     name = "Resume"
-    url  = ""
+    url  = "/resume"
+[[menu.main]]
+    name = "The Good Parts"
+    url  = "/the-good-parts"

@@ -77,3 +77,6 @@ export CONTACT_INFO=/Users/$USER/Workspace/nickolaskraus-org/.aws/contact.json
 
 # set hosted zone id
 export HOSTED_ZONE_ID=Z1E9RPNBG99QWU
+
+# set DNS configuration JSON path
+export DNS_CONFIG=/Users/$USER/Workspace/nickolaskraus-org/.aws/dns_config.json

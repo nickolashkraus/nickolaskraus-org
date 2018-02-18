@@ -21,6 +21,3 @@ pygmentscodefences  = true
 [[menu.main]]
     name = "Resume"
     url  = "/resume"
-[[menu.main]]
-    name = "The Good Parts"
-    url  = "/the-good-parts"

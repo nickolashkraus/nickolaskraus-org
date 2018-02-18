@@ -2,12 +2,15 @@
 #
 # Set environment variables for AWS configuration
 #
-# usage: set-aws-env
+# usage: source set-aws-env.sh
 #
 
 #
 # Global
 #
+
+# set domain name
+export DOMAIN_NAME=nickolaskraus.org
 
 # set canonical user id
 export CANONICAL_USER_ID=7582eb3b4084d40317f555af862717b27782d077f476ded2a56ba646da07ed8d
@@ -19,64 +22,52 @@ export REGION=us-east-1
 # Amazon S3 Configuration
 #
 
-# set s3 bucket name for log files
-export BUCKET_LOGS=nickolaskraus-awscli-logs
+# set bucket name for log files
+export S3_BUCKET_LOGS=nickolaskraus-logs
 
-# set s3 bucket name for root domain
-export BUCKET_ROOT=nickolaskraus-awscli-root
-
-# set s3 bucket name for input files
-export BUCKET_INPUT=nickolaskraus-awscli-input
+# set bucket name for root domain
+export S3_BUCKET_ROOT=nickolaskraus-root
 
 # set logging policy JSON path
-export LOGGING_POLICY=/Users/$USER/Workspace/nickolaskraus-org/.aws/logging.json
+export S3_LOGGING_POLICY=/Users/$USER/Workspace/nickolaskraus-org/.aws/s3_logging_policy.json
 
 # set website configuration JSON path
-export WEBSITE_CONFIG=/Users/$USER/Workspace/nickolaskraus-org/.aws/website.json
+export S3_WEBSITE_CONFIG=/Users/$USER/Workspace/nickolaskraus-org/.aws/s3_website_config.json
 
 # set bucket policy JSON path
-export BUCKET_POLICY=/Users/$USER/Workspace/nickolaskraus-org/.aws/policy.json
+export S3_BUCKET_POLICY=/Users/$USER/Workspace/nickolaskraus-org/.aws/s3_bucket_policy.json
+
+# set S3 bucket domain name
+export S3_DOMAIN_NAME=$S3_BUCKET_ROOT.s3-website.$REGION.amazonaws.com
 
 #
 # Amazon CloudFront Configuration
 #
 
-# set region
-export CERTIFICATE_REGION=us-east-1
-
-# set domain name
-export DOMAIN_NAME=nickolaskraus-awscli.org
-
 # set certificate ARN
-export CERTIFICATE_ARN=arn:aws:acm:us-east-1:185444048157:certificate/f1a83376-fae8-4ffc-ab3d-58f9e85c71f6
+export CF_CERTIFICATE_ARN=arn:aws:acm:us-east-1:185444048157:certificate/bcf95a60-a87b-4423-b860-6a5924fead18
 
 # set DNS validation JSON path
-export DNS_VALIDATION=/Users/$USER/Workspace/nickolaskraus-org/.aws/dns_validation.json
-
-# set CloudFront Distribution domain name
-export CF_DOMAIN_NAME=nickolaskraus-awscli.org
+export CF_DNS_VALIDATION=/Users/$USER/Workspace/nickolaskraus-org/.aws/cf_dns_validation.json
 
 # set distribution JSON path
-export CF_DISTRIBUTION=/Users/$USER/Workspace/nickolaskraus-org/.aws/distribution.json
+export CF_DISTRIBUTION=/Users/$USER/Workspace/nickolaskraus-org/.aws/cf_distribution.json
+
+# set CloudFront distribution domain name
+export CF_DOMAIN_NAME=dfgyhavmcf7qg.cloudfront.net
 
 #
 # Amazon Route 53 Configuration
 #
 
-# set region
-export DOMAIN_REGION=us-east-1
-
-# set domain name
-export DOMAIN_NAME=nickolaskraus-awscli.org
-
 # set domain domain duration
-export DOMAIN_DURATION=1
+export R53_DOMAIN_DURATION=1
 
 # set domain contact (admin, registrant, tech) information JSON path
-export CONTACT_INFO=/Users/$USER/Workspace/nickolaskraus-org/.aws/contact.json
+export R53_CONTACT_INFO=/Users/$USER/Workspace/nickolaskraus-org/.aws/r53_contact_info.json
 
 # set hosted zone id
-export HOSTED_ZONE_ID=Z1E9RPNBG99QWU
+export R53_HOSTED_ZONE_ID=Z3OMX3SLNACZXW
 
 # set DNS configuration JSON path
-export DNS_CONFIG=/Users/$USER/Workspace/nickolaskraus-org/.aws/dns_config.json
+export R53_DNS_CONFIG=/Users/$USER/Workspace/nickolaskraus-org/.aws/r53_dns_config.json

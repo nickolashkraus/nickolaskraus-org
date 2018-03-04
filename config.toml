@@ -12,6 +12,11 @@ pygmentscodefences  = true
   sitename = "Nickolas Kraus"
   dateFormat = "January 2, 2006"
 
+[params.social]
+  email = "nickhkraus@gmail.com"
+  github = "https://github.com/NickolasHKraus"
+  linkedin = "https://linkedin.com/in/nickolas-kraus"
+
 [[menu.main]]
     name = "About"
     url  = "/about"
@@ -20,4 +25,4 @@ pygmentscodefences  = true
     url  = "/articles"
 [[menu.main]]
     name = "Resume"
-    url  = "/resume"
+    url  = "/resume.pdf"

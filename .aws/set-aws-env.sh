@@ -56,6 +56,9 @@ export CF_DISTRIBUTION=/Users/$USER/Workspace/nickolaskraus-org/.aws/cf_distribu
 # set CloudFront distribution domain name
 export CF_DOMAIN_NAME=dfgyhavmcf7qg.cloudfront.net
 
+# set CloudFront distribution id
+export CF_DISTRIBUTION_ID=E1QOOVYWY70KUZ
+
 #
 # Amazon Route 53 Configuration
 #

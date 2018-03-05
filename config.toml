@@ -1,4 +1,4 @@
-baseURL = "https://nickolaskraus.org/"
+baseURL = "https://nickolaskraus.org"
 languageCode = "en-us"
 title = "Nickolas Kraus"
 author = "Nickolas Kraus"
@@ -16,6 +16,7 @@ pygmentscodefences  = true
   email = "nickhkraus@gmail.com"
   github = "https://github.com/NickolasHKraus"
   linkedin = "https://linkedin.com/in/nickolas-kraus"
+  twitter = "https://twitter.com/NickolasHKraus"
 
 [[menu.main]]
     name = "About"

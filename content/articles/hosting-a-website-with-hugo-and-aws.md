@@ -735,6 +735,8 @@ aws route53 change-resource-record-sets --hosted-zone-id $R53_HOSTED_ZONE_ID --c
 
 #### AWS Management Console
 
+**Upload your website**
+
 1. Go to https://console.aws.amazon.com/s3/.
 
 2. Select **Upload**.
@@ -747,11 +749,31 @@ aws route53 change-resource-record-sets --hosted-zone-id $R53_HOSTED_ZONE_ID --c
 
 6. Click **Upload**.
 
+**Invalidate the CloudFront cache**
+
+1. Go to https://console.aws.amazon.com/cloudfront.
+
+2. Check your distribution and click **Distribution Settings**.
+
+3. Click the **Invalidations** tab, then click **Create Invalidation**.
+
+4. Enter `/*` and click **Invalidate**.
+
 #### AWS CLI
+
+* Upload your website:
 
 ```bash
 aws s3 sync --acl "public-read" public/ s3://$S3_BUCKET_ROOT
 ```
+
+* Invalidate the CloudFront cache:
+
+```bash
+aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths "/*"
+```
+
+**Note**: If you specify a path that includes a `*` (wildcard), you must use quotes (") around the path. For example, if you wish to invalidate *all* paths, you would use `"/*"`.
 
 ### FAQ
 

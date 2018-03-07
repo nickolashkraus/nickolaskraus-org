@@ -2,9 +2,10 @@
 title: "Hosting a Static Website with Hugo and AWS"
 date: 2018-02-18T12:00:00-06:00
 draft: false
+description: This article details the steps for creating and hosting a static website on AWS. I provide both the manual steps (via the Amazon Management Console) and the semi-automated steps using AWS CLI.
 ---
 
-This article details the steps for creating and hosting a static website on AWS. I provide both the manual steps (via the Amazon Management Console) and the semi-automated steps using AWS CLI. Both methods will elicit that same results.
+This article details the steps for creating and hosting a static website on AWS. I provide both the manual steps (via the Amazon Management Console) and the semi-automated steps using AWS CLI.
 
 ## Hugo
 Hugo is a static site generator. The purpose of a static website generator is to render content into HTML files *before* the request for the content is made - increasing performance and reducing load time. To achieve this, Hugo uses a source directory of files and templates as input to create a complete website.
@@ -56,7 +57,7 @@ Hugo is a static site generator. The purpose of a static website generator is to
 
 	This will bootstrap your static site. For a more in-depth look at Hugo and how to use it, check out their [documentation](https://gohugo.io/documentation/).
 
-	**Note**: `-D` will include content marked as *draft* when running the server or generating static content.
+	**Note**: The `-D` option will include content marked as *draft* when running the server or generating static content.
 
 7. Generate static files
 
@@ -100,6 +101,7 @@ This URL requests the `photo.jpg` object, which is stored at the root level in t
 http://my-bucket.s3-website-us-east-1.amazonaws.com/photo.jpg
 
 ```
+
 This URL requests the `docs/doc1.html` object in your bucket.
 
 ```

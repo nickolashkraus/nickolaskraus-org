@@ -7,14 +7,14 @@ description: Enabling SSL/TLS for your Google App Engine production environment 
 
 Enabling SSL/TLS for your Google App Engine production environment can be done trivially. Nevertheless, some circumstances require that your local development server also use SSL/TLS. Since the local development server provided by the Google Cloud SDK, `dev_appserver.py`, does not come with SSL/TLS out of the box, some configuration is required to accomplish this.
 
-# Using SSL/TLS with Google App Engine
-
 ## In Production
 [Link](https://cloud.google.com/appengine/docs/standard/python/sockets/ssl_support)
 
 Employing SSL/TLS in production is relatively straight forward. From the Google Cloud Platform documentation:
 
-> If you want to use native Python SSL, you must enable it by specifying `ssl` for the `libraries` configuration in your application's `app.yaml`:
+> If you want to use native Python SSL, you must enable it by specifying `ssl` for the `libraries` configuration in your application's `app.yaml`.
+
+`app.yaml`
 
 ```yaml
 libraries:

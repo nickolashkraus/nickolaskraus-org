@@ -349,45 +349,53 @@ aws s3api put-bucket-policy --bucket $S3_BUCKET_ROOT --policy file://$S3_BUCKET_
 
 5. Click **Create Distribution**
 
-**Origin Settings** | | 
---------|--------|--------|
-Origin Domain Name |  | `example-bucket-root.s3-website.<AWS-region>.amazonaws.com`
-Origin Path |  | `N/A`
-Origin ID |  | `S3-example-bucket-root`
-Restrict Bucket Access |  | `No`
-Origin Custom Headers |  | `N/A`
-| --- |  | 
-**Default Cache Behavior Settings** | | 
-Path Pattern |  | `Default (\*)`
-Viewer Protocol Policy |  | `Redirect HTTP to HTTPS`
-Allowed HTTP Methods |  | `GET, HEAD`
-Field-level Encryption Config |  | `N/A`
-Cached HTTP Methods |  | `GET, HEAD (Cached by default)`
-Cache Based on Selected Request Headers |  | `None (Improves Caching)`
-Object Caching |  | `Use Origin Cache Headers`
-Forward Cookies |  | `None (Improves Caching)`
-Query String Forwarding and Caching |  | `None (Improves Caching)`
-Smooth Streaming |  | `No`
-Restrict Viewer Access |  | `No`
-Compress Objects Automatically |  | `No`
-Lambda Function Associations |  | `N/A`
-| --- |  | 
-**Distribution Settings** | | 
-Price Class |  | `Use All Edge Locations (Best Performance)`
-AWS WAF Web ACL |  | `None`
-Alternate Domain Names |  | `example.com, www.example.com`
-SSL Certificate |  | `Custom SSL Certificate`
-Custom SSL Client Support |  | `Only Clients that Support SNI`
-Security Policy |  | `TLSv1.1_2016 (recommended)`
-Supported HTTP Versions |  | `HTTP/2, HTTP/1.1, HTTP/1.0`
-Default Root Object |  | `index.html`
-Logging |  | `On`
-Bucket for Logs |  | `example-bucket-logs.s3.amazonaws.com`
-Log Prefix |  | `cdn/`
-Cookie Logging |  | `Off`
-Enable IPv6 |  | ☑️
-Comment |  | `N/A`
-Distribution State |  | `Enabled`
+**Origin Settings**
+
+ | 
+--------|--------|
+Origin Domain Name | `example-bucket-root.s3-website.<AWS-region>.amazonaws.com`
+Origin Path | `N/A`
+Origin ID | `S3-example-bucket-root`
+Restrict Bucket Access | `No`
+Origin Custom Headers | `N/A`
+
+**Default Cache Behavior Settings**
+
+ | 
+--------|--------|
+Path Pattern | `Default (\*)`
+Viewer Protocol Policy | `Redirect HTTP to HTTPS`
+Allowed HTTP Methods | `GET, HEAD`
+Field-level Encryption Config | `N/A`
+Cached HTTP Methods | `GET, HEAD (Cached by default)`
+Cache Based on Selected Request Headers | `None (Improves Caching)`
+Object Caching | `Use Origin Cache Headers`
+Forward Cookies | `None (Improves Caching)`
+Query String Forwarding and Caching | `None (Improves Caching)`
+Smooth Streaming | `No`
+Restrict Viewer Access | `No`
+Compress Objects Automatically | `No`
+Lambda Function Associations | `N/A`
+
+**Distribution Settings**
+
+ | 
+--------|--------|
+Price Class | `Use All Edge Locations (Best Performance)`
+AWS WAF Web ACL | `None`
+Alternate Domain Names | `example.com, www.example.com`
+SSL Certificate | `Custom SSL Certificate`
+Custom SSL Client Support | `Only Clients that Support SNI`
+Security Policy | `TLSv1.1_2016 (recommended)`
+Supported HTTP Versions | `HTTP/2, HTTP/1.1, HTTP/1.0`
+Default Root Object | `index.html`
+Logging | `On`
+Bucket for Logs | `example-bucket-logs.s3.amazonaws.com`
+Log Prefix | `cdn/`
+Cookie Logging | `Off`
+Enable IPv6 | ☑️ 
+Comment | `N/A`
+Distribution State | `Enabled`
 
 **Note**: Select the SSL certificate created for this domain.
 
@@ -636,14 +644,16 @@ aws cloudfront list-distributions --query 'DistributionList.Items[].{Id:Id,Domai
 
 7. Repeat steps 5 and 6 for your www subdomain.
 
-**Create Record Set** | | 
---------|--------|--------|
-Name |  | 
-Type |  | `A - IPv4 address`
-Alias |  | `Yes`
-Alias Target |  | `CloudFront distribution domain`
-Routing Policy |  | `Simple`
-Evaluate Target Health |  | `No`
+**Create Record Set**
+
+ | 
+--------|--------|
+Name | -
+Type | `A - IPv4 address`
+Alias | `Yes`
+Alias Target | `CloudFront distribution domain`
+Routing Policy | `Simple`
+Evaluate Target Health | `No`
 
 #### AWS CLI
 

@@ -37,7 +37,7 @@ def set(self, k, v):
 How do I elicit a `TypeError` and/or `KeyError`. Also, how do I test the exception message?
 
 ## Solution
-The solution is to use [`assertRaises`](https://docs.python.org/dev/library/unittest.html#unittest.TestCase.assertRaises). `assertRaises` allows an exception to be encapsulated, which means that the test can throw an exception without exiting execution, as is normally the case for uncaught exceptions.
+The solution is to use [`assertRaises`](https://docs.python.org/dev/library/unittest.html#unittest.TestCase.assertRaises). `assertRaises` allows an exception to be encapsulated, which means that the test can throw an exception without exiting execution, as is normally the case for unhandled exceptions.
 
 There are two ways to use `assertRaises`:
 

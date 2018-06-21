@@ -6,12 +6,12 @@ canonifyurls = true
 theme = "black-and-light-2"
 
 pygmentsStyle       = "tango"
-pygmentscodefences  = true
+pygmentsCodeFences  = true
 
 googleAnalytics = "UA-115911814-1"
 
 [params]
-  sitename = "Nickolas Kraus"
+  siteName = "Nickolas Kraus"
   dateFormat = "January 2, 2006"
 
 [params.social]

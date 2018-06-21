@@ -787,6 +787,12 @@ aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths
 
 **Note**: If you specify a path that includes a `*` (wildcard), you must use quotes (") around the path. For example, if you wish to invalidate *all* paths, you would use `"/*"`.
 
+To remove all files or objects in the root bucket, do the following:
+
+```bash
+aws s3 rm s3://$S3_BUCKET_ROOT --recursive
+```
+
 ### FAQ
 
 **Question**:

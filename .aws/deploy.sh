@@ -5,6 +5,12 @@
 # usage: deploy.sh
 #
 
+# change directory to project root
+cd /Users/nickolaskraus/Workspace/nickolaskraus-org/
+
+# set environment variables
+source $PWD/.aws/set-aws-env.sh
+
 # remove static files
 rm -rf $PWD/public
 

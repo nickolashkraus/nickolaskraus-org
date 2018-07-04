@@ -1,5 +1,5 @@
 ---
-title: "Populating a StructuredProperty using the ndb.Model Constructor"
+title: "Populating a StructuredProperty Using the ndb.Model Constructor"
 date: 2018-04-01T12:00:00-06:00
 draft: false
 description: After taking a deep dive into the App Engine SDK for Python, I thought I would share some of my findings on some of the more esoteric features of the ndb.Model class. In particular, how one can populate a StructuredProperty using the ndb.Model constructor.

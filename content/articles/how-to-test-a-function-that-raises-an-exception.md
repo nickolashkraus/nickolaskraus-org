@@ -1,5 +1,5 @@
 ---
-title: "How to Test a Function that Raises an Exception"
+title: "How to Test a Function That Raises an Exception"
 date: 2018-03-11T12:00:00-06:00
 draft: false
 description: This article demonstrates how to create a unit test for a Python function that raises an exception.

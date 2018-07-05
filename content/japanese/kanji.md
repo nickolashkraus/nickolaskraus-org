@@ -1,7 +1,7 @@
 ---
 title: "Kanji"
 date: 2018-06-24T12:00:00-06:00
-draft: true
+draft: false
 description: Kanji are the adopted logographic Chinese characters that are used in the Japanese writing system alongside hiragana and katakana.
 ---
 

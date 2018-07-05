@@ -1,7 +1,7 @@
 ---
 title: "Katakana"
 date: 2018-06-17T12:00:00-06:00
-draft: true
+draft: false
 description: Katakana is a Japanese syllabary and one component of the Japanese writing system, along with katakana and kanji.
 ---
 

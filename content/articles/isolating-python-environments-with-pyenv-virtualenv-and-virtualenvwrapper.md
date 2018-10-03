@@ -197,7 +197,7 @@ $ pyenv-virtualenvwrapper --version
 pyenv-virtualenvwrapper 20140609 (virtualenvwrapper 4.8.2)
 ```
 
-### Configure pyenv
+### Configure `pyenv`
 
 Install the Python versions you wish to use:
 

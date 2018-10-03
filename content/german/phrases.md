@@ -1,5 +1,5 @@
 ---
-title: "Phases"
+title: "Phrases"
 date: 2018-06-24T12:00:00-06:00
 draft: false
 description: Basic German phrases
@@ -27,6 +27,7 @@ Schuld     | guilt
 So, *Entschuldigung* literally means something like "deguiltification", but it can be used in cases where "Excuse me" or "Sorry" are appropriate.
 
 ## Vocabulary
+
 ### Phrases
 
 **English**       | **German**

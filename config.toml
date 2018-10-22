@@ -30,19 +30,3 @@ googleAnalytics = "UA-115911814-1"
 [[menu.main]]
     name = "Resume"
     url  = "/resume.pdf"
-
-[[menu.secondary]]
-    name = "German"
-    url  = "/german"
-[[menu.secondary]]
-    name = "Japanese"
-    url  = "/japanese"
-[[menu.secondary]]
-    name = "Reading"
-    url  = "/reading"
-[[menu.secondary]]
-    name = "Technology"
-    url  = "/technology"
-[[menu.secondary]]
-    name = "Travel"
-    url  = "/travel"

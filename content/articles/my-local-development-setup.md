@@ -7,7 +7,7 @@ description: This article provides a comprehensive walk through of the tools and
 
 I like my local development setup to be lean and automated. This allows me to get up and running with a new machine in under an hour. The following is a comprehensive walk through of the tools and productivity modifications that I use.
 
-This walk through references several configuration files. These configuration files (typically referred to as *dotfiles*) can be found [here](git@github.com:NickolasHKraus/dotfiles.git).
+This walk through references several configuration files. These configuration files (typically referred to as *dotfiles*) can be found [here](https://github.com/NickolasHKraus/dotfiles)
 
 ## MacOS
 

@@ -1,2 +1,8 @@
+# Unix
+*.swp
+
+# OS X
 .DS_Store
-public/*
+
+# Hugo
+public/

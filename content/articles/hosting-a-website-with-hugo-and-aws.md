@@ -351,7 +351,7 @@ aws s3api put-bucket-policy --bucket $S3_BUCKET_ROOT --policy file://$S3_BUCKET_
 
 **Origin Settings**
 
- | 
+ |
 --------|--------|
 Origin Domain Name | `example-bucket-root.s3-website.<AWS-region>.amazonaws.com`
 Origin Path | `N/A`
@@ -361,7 +361,7 @@ Origin Custom Headers | `N/A`
 
 **Default Cache Behavior Settings**
 
- | 
+ |
 --------|--------|
 Path Pattern | `Default (\*)`
 Viewer Protocol Policy | `Redirect HTTP to HTTPS`
@@ -379,7 +379,7 @@ Lambda Function Associations | `N/A`
 
 **Distribution Settings**
 
- | 
+ |
 --------|--------|
 Price Class | `Use All Edge Locations (Best Performance)`
 AWS WAF Web ACL | `None`
@@ -393,7 +393,7 @@ Logging | `On`
 Bucket for Logs | `example-bucket-logs.s3.amazonaws.com`
 Log Prefix | `cdn/`
 Cookie Logging | `Off`
-Enable IPv6 | ☑️ 
+Enable IPv6 | ☑️
 Comment | `N/A`
 Distribution State | `Enabled`
 
@@ -646,7 +646,7 @@ aws cloudfront list-distributions --query 'DistributionList.Items[].{Id:Id,Domai
 
 **Create Record Set**
 
- | 
+ |
 --------|--------|
 Name | -
 Type | `A - IPv4 address`

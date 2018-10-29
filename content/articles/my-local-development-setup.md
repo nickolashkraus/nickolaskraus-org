@@ -230,7 +230,7 @@ ln -s ~/path/to/remote/Shortcuts.json ~/Library/Application\ Support/Spectacle/S
 ```
 
 ## Ag
-[ag](https://github.com/ggreer/the_silver_searcher) (The Silver Searcher) is a code searching tool similar to `ack`, with a focus on speed.
+[Ag](https://github.com/ggreer/the_silver_searcher) (The Silver Searcher) is a code searching tool similar to `ack`, with a focus on speed.
 
 ### Installation
 

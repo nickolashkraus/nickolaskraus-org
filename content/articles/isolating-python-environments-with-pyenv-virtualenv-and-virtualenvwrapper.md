@@ -125,6 +125,8 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 ```
 
+**Note**: This will tell virtualenvwrapper to use the global installation of Python 2 and virtualenv. If you do not specify `VIRTUALENVWRAPPER_PYTHON` and `VIRTUALENVWRAPPER_VIRTUALENV`, you will need to install virtualenv and virtualenvwrapper in each environment you plan invoke virtualenvwrapper commands (e.g. `mkvirtualenv`).
+
 Restart your shell (in this case I am using zsh):
 
 ```bash
@@ -191,7 +193,7 @@ Confirm install:
 
 ```bash
 $ pyenv --version
-pyenv 1.1.5 
+pyenv 1.1.5
 
 $ pyenv-virtualenvwrapper --version
 pyenv-virtualenvwrapper 20140609 (virtualenvwrapper 4.8.2)
@@ -299,7 +301,7 @@ Now let's reiterate what we just did. First, we installed `python2` and `python3
 
 If you comment out the `# Configure pyenv` section of your zsh or bash configuration file, you should revert your back to the system-wide installation of Python provided by Homebrew.
 
-```
+```bash
 # Configure pyenv
 #eval "$(pyenv init -)"
 
@@ -437,3 +439,25 @@ $ deactivate
 ```
 
 Done! You have successfully configured your development environment using `pyenv`, `virtualenv`, and `virtualenvwrapper` in order to isolate Python environments.
+
+**Update - 11.08.2018**
+
+Hitting this error?
+
+```bash
+mkvirtualenv:78: /usr/local/bin/virtualenv: bad interpreter: /usr/local/opt/python/bin/python2.7: no such file or directory
+```
+
+This error is due to the fact that virtualenv uses the absolute path of the Python 2 installation (`#!/usr/local/opt/python/bin/python2.7`). As of March 1st, 2018, Homebrew updated the `python` formula to use Python 3:
+
+> On 1st March 2018 the `python` formula will be upgraded to Python 3.x and a `python@2` formula will be added for installing Python 2.7 (although this will be keg-only so neither `python` nor `python2` will be added to the `PATH` by default without a manual `brew link --force`). We will maintain `python2`, `python3` and `python@3` aliases. Any formulae that use `depends_on` "python" outside Homebrew/core will need to be updated at this point if they wish to keep using Python 2. Note: macOS has provided Python 2.7 since OS X Lion (10.7) so you can update formulae that need Python 2 today by removing `depends_on` "python" so they use the system Python instead.
+
+To remedy this change, virtualenv changed the path of the Python 2 installation to use the `python@2` formula (`#!/usr/local/opt/python@2/bin/python2.7`).
+
+Upgrade the virtualenv and virtualenvwrapper Python packages for the global Python 2 installation:
+
+```bash
+$ which python
+/usr/local/bin/python
+$ pip install --upgrade virtualenv virtualenvwrapper
+```

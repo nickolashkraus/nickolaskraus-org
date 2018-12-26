@@ -796,13 +796,13 @@ set updatetime=100
 Jump to next hunk:
 
 ```vim
-c]
+]c
 ```
 
 Jump to previous hunk:
 
 ```vim
-c[
+[c
 ```
 
 Preview a hunk:

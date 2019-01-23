@@ -356,7 +356,7 @@ Add the following to your `.vimrc`:
 `.vimrc`
 
 ```vim
-let anyfold_activate=1
+autocmd Filetype * AnyFoldActivate
 set foldlevel=99
 ```
 

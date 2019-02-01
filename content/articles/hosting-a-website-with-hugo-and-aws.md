@@ -809,7 +809,7 @@ In order for your customers to access content at the website endpoint, you must 
 
 **Answer**
 
-The short answer is not necessarily. Most guides that you will come across, including those found in the official Amazon documentation, instruct the user to create an S3 bucket for both the root and wwww subdomain. This is an entirely legitimate solution, however, when using Amazon CloudFront to distribute content, this becomes unnecessary.
+The short answer is not necessarily. Most guides that you will come across, including those found in the official Amazon documentation, instruct the user to create an S3 bucket for both the root and www subdomain. This is an entirely legitimate solution, however, when using Amazon CloudFront to distribute content, this becomes unnecessary.
 
 **Question**:
 

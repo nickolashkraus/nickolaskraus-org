@@ -9,15 +9,15 @@ I like my local development setup to be lean and automated. This allows me to ge
 
 This walk through references several configuration files. These configuration files (typically referred to as *dotfiles*) can be found [here](https://github.com/NickolasHKraus/dotfiles)
 
-## MacOS
+## macOS
 
 ### Rebind Caps Lock to Control
 To rebind Caps Lock (⇪) to Control (⌃) go to **System Preferences** > **Keyboard** > **Modifier Keys…** and change **Caps Lock (⇪) Key:** to **^ Control**.
 
 ### Configure shortcuts
-To configure MacOS shortcuts, go to **System Preferences** > **Keyboard** > **Shortcuts**.
+To configure macOS shortcuts, go to **System Preferences** > **Keyboard** > **Shortcuts**.
 
-For MacOS, my shortcuts are as follows:
+For macOS, my shortcuts are as follows:
 
 | | |
 |-----------------------|-----------|
@@ -49,11 +49,20 @@ defaults write com.apple.dock autohide-time-modifier -int 0
 defaults write com.apple.dock autohide-delay -int 0
 ```
 
+### Enable Key Repeat
+To enable key repeat, use the following command:
+
+```bash
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
+To modify key repeat speed, go to **System Preferences** > **Keyboard** > and increase or decrease *Key Repeat* and *Delay Until Repeat*.
+
 ## Git
 [Git](https://git-scm.com/) is a version-control system for tracking changes in computer files and coordinating work on those files among multiple people.
 
 ### Installation
-The easiest way to install Git on MacOs is to install the Xcode Command Line Tools:
+The easiest way to install Git on macOS is to install the Xcode Command Line Tools:
 
 ```bash
 xcode-select --install
@@ -67,15 +76,15 @@ ln -s ~/path/to/remote/.gitconfig ~/.gitconfig
 ```
 
 ## iTerm2
-[iTerm2](https://www.iterm2.com/) is a replacement for the standard MacOS terminal.
+[iTerm2](https://www.iterm2.com/) is a replacement for the standard macOS terminal.
 
 ### Installation
 
 ```bash
-curl -LOk https://iterm2.com/downloads/stable/iTerm2-3_2_3.zip
-unzip -q iTerm2-3_2_3.zip
+curl -LOk https://iterm2.com/downloads/stable/iTerm2-3_2_7.zip
+unzip -q iTerm2-3_2_7.zip
 mv iTerm.app /Applications
-rm iTerm2-3_2_3.zip
+rm iTerm2-3_2_7.zip
 ```
 
 ### Configuration
@@ -84,7 +93,7 @@ rm iTerm2-3_2_3.zip
 
 To set the [plist](https://en.wikipedia.org/wiki/Property_list), go to **Preferences** > **General**. Under **Preferences**, set *Load preferences from a custom folder of URL* to the location of `com.googlecode.iterm2.plist`.
 
-To set the color scheme, go to **Preferences** > **Profiles** > **Color Presets…** > **Import…** and import `colorscheme.itermcolors`. *colorscheme* will then appear under **Color Presets…**.
+To set the color scheme, go to **Preferences** > **Profiles** > **Colors** > **Color Presets...** > **Import...** and import `colorscheme.itermcolors`. *colorscheme* will then appear under **Color Presets...**.
 
 ## Zsh
 [Oh My Zsh](https://ohmyz.sh/) is an open source, community-driven framework for managing your Zsh configuration. I use a [fork](https://github.com/NickolasHKraus/oh-my-zsh) containing my custom amuse theme.
@@ -93,6 +102,15 @@ To set the color scheme, go to **Preferences** > **Profiles** > **Color Presets�
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+Or use:
+
+```bash
+cd ~
+git clone https://github.com/NickolasHKraus/oh-my-zsh .oh-my-zsh
+cd .oh-my-zsh
+git remote add upstream git@github.com:robbyrussell/oh-my-zsh.git
 ```
 
 ### Configuration
@@ -111,7 +129,7 @@ ln -s ~/path/to/remote/.zshrc ~/.zsrhc
 pip install --user powerline-status
 ```
 
-This will install Powerline to the Python user install directory for your platform. On MacOS, this is typically `~/.local/`.
+This will install Powerline to the Python user install directory for your platform. On macOS, this is typically `~/.local/`.
 
 **Note**: If you use a virtualenv, you will need to install `powerline-status` to it as well.
 
@@ -135,7 +153,7 @@ rm -rf fonts
 There is no further configuration needed for Powerline fonts.
 
 ## Homebrew
-[Homebrew](https://brew.sh/) is an exceptional package manager for MacOS.
+[Homebrew](https://brew.sh/) is an exceptional package manager for macOS.
 
 ### Installation
 
@@ -168,7 +186,7 @@ ln -s ~/path/to/remote/.tmux.conf ~/.tmux.conf
 ### Installation
 
 ```bash
- brew install vim --with-override-system-vi
+brew install vim
 ```
 
 ### Configuration
@@ -216,7 +234,7 @@ ln -s ~/path/to/remote/mpv.conf ~/.config/mpv/mpv.conf
 ### Installation
 
 ```bash
-curl -LOk https://s3.amazonaws.com/spectacle/downloadsSpectacle+1.2.zip
+curl -LOk https://s3.amazonaws.com/spectacle/downloads/Spectacle+1.2.zip
 unzip -q Spectacle+1.2.zip
 mv Spectacle.app /Applications
 rm Spectacle+1.2.zip

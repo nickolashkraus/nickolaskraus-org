@@ -35,6 +35,14 @@ The following is a catalog of the Vim plugins that I use and how to use them. Th
 
 While reading this article, you may also find my [`.vimrc`](https://github.com/NickolasHKraus/dotfiles/blob/master/.vimrc) helpful. Before we dive into Vim packages, its prudent to discuss how to manage them. I preferred to use Vundle.
 
+**Note**: This article goes into great detail about each plugin. If you simply want to install these plugins and get to work, copy my [`.vimrc`](https://github.com/NickolasHKraus/dotfiles/blob/master/.vimrc) and run:
+
+```bash
+vim +PluginInstall +qall
+```
+
+It should be noted, that you will still need to compile YouCompleteMe.
+
 ## Vundle
 [VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 
@@ -119,7 +127,7 @@ vim +PluginInstall +qall
 [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 
 #### Overview
-YouCompleteMe is a code completion engine for Vim. It provides a completion engine for many of the most common languages (C/C++, Python, C#, Go, etc.) in addition to a general identifier-based engine that works with every programming language. YouCompleteMe also leverages Vim's omnicomplete system to provide semantic completions for many other languages for which a completion engine does not exist.
+YouCompleteMe is a code completion engine for Vim. It provides a completion engine for many of the most common languages (C/C++, Python, C#, Go, etc.) in addition to a general identifier-based engine that works with every programming language. YouCompleteMe also leverages Vim’s omnicomplete system to provide semantic completions for many other languages for which a completion engine does not exist.
 
 #### Installation
 It should be noted that YouCompleteMe is a Vim Plugin with a compiled component. Simply installing the YouCompleteMe plugin is not enough to get it to work.
@@ -337,7 +345,7 @@ let g:syntastic_<filetype>_checkers = ['<checker_1>', '<checker_2>', ...]
 
 #### Overview
 
-vim-anyfold is an enhancement of Vim's native folding logic (`foldmethod=indent`).
+vim-anyfold is an enhancement of Vim’s native folding logic (`foldmethod=indent`).
 
 #### Installation
 
@@ -362,7 +370,7 @@ set foldlevel=99
 
 #### Usage
 
-Use Vim's fold commands (`zo`, `zO`, `zc`, `za`) to fold/unfold folds.
+Use Vim’s fold commands (`zo`, `zO`, `zc`, `za`) to fold/unfold folds.
 
 Use key combinations `[[` and `]]` to navigate to the beginning and end of the current open fold.
 

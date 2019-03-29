@@ -9,6 +9,7 @@ Creating static websites is a hobby of mine. This blog, in fact, was created usi
 
 ## Overview
 Hosting a static website on AWS makes use of the following resources:
+
 * Amazon S3
 * AWS Certificate Manager
 * Amazon CloudFront

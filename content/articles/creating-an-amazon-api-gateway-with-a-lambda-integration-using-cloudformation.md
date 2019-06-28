@@ -23,6 +23,7 @@ You can integrate an API method with a Lambda function using a Lambda *proxy int
 
 ### Proxy integration
 With a *proxy integration*, the setup is simple. If your API does not require content encoding or caching, you only need to do the following:
+
 1. Set the integration's HTTP method to POST.
 2. Set the integration endpoint URI to the ARN of the Lambda function invocation action of a specific Lambda function.
 3. Set the credential to an IAM role with permissions to allow API Gateway to call the Lambda function on your behalf.
@@ -246,6 +247,7 @@ LambdaIamRole:
 
 ### A classic chicken and egg problem
 There are two ways to deploy a Lambda function using CloudFormation:
+
 1. Inline
 2. Using Amazon S3
 

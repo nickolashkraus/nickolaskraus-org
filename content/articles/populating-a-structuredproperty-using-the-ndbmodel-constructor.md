@@ -141,18 +141,18 @@ print
 
 ```
 Test Case 1:
-Contact(phone_numbers=[PhoneNumber(number='123', phone_type='home'), 
-PhoneNumber(number='456', phone_type='work'), 
+Contact(phone_numbers=[PhoneNumber(number='123', phone_type='home'),
+PhoneNumber(number='456', phone_type='work'),
 PhoneNumber(number='789', phone_type='fax')])
 
 Test Case 2:
-Contact(phone_numbers=[PhoneNumber(number='123', phone_type='home'), 
-PhoneNumber(number='456', phone_type='work'), 
+Contact(phone_numbers=[PhoneNumber(number='123', phone_type='home'),
+PhoneNumber(number='456', phone_type='work'),
 PhoneNumber(number='789', phone_type='fax')])
 
 Test Case 3:
-Contact(phone_numbers=[PhoneNumber(number='123', phone_type='home'), 
-PhoneNumber(number='456', phone_type='work'), 
+Contact(phone_numbers=[PhoneNumber(number='123', phone_type='home'),
+PhoneNumber(number='456', phone_type='work'),
 PhoneNumber(number='789', phone_type='fax')])
 ```
 

@@ -14,56 +14,55 @@ Hugo is a static site generator. The purpose of a static website generator is to
 
 1. Install Hugo
 
-	```bash
-	brew install hugo
-	```
+    ```bash
+    brew install hugo
+    ```
 
 2. Create a new site
 
-	```bash
-	hugo new site my-site
-	```
+    ```bash
+    hugo new site my-site
+    ```
 
 3. Add source control
 
-	```bash
-	cd my-site
-	git init
-	```
+    ```bash
+    cd my-site
+    git init
+    ```
 
 4. Choose a theme
 
-	Pre-made themes can be found [here](https://themes.gohugo.io/). This website uses a custom theme that I created, which can be found [here](https://github.com/NickolasHKraus/black-and-light-2).
+    Pre-made themes can be found [here](https://themes.gohugo.io/). This website uses a custom theme that I created, which can be found [here](https://github.com/NickolasHKraus/black-and-light-2).
 
-	```bash
-	git submodule add git@github.com:<username>/<theme>.git themes/<theme>
-	```
-
-	Next, copy the `config.toml` from your chosen template into your own.
+    ```bash
+    git submodule add git@github.com:<username>/<theme>.git themes/<theme>
+    ```
+    Next, copy the `config.toml` from your chosen template into your own.
 
 5. Add content
 
-	```bash
-	hugo new posts/my-first-post.md
-	```
+    ```bash
+    hugo new posts/my-first-post.md
+    ```
 
-	**Note**: This will create a new directory, `posts`, and file, `my-first-post.md`, in the `content` directory.
+    **Note**: This will create a new directory, `posts`, and file, `my-first-post.md`, in the `content` directory.
 
 6. Start the Hugo server
 
-	```bash
-	hugo server -D
-	```
+    ```bash
+    hugo server -D
+    ```
 
-	This will bootstrap your static site. For a more in-depth look at Hugo and how to use it, check out their [documentation](https://gohugo.io/documentation/).
+    This will bootstrap your static site. For a more in-depth look at Hugo and how to use it, check out their [documentation](https://gohugo.io/documentation/).
 
-	**Note**: The `-D` option will include content marked as *draft* when running the server or generating static content.
+    **Note**: The `-D` option will include content marked as *draft* when running the server or generating static content.
 
 7. Generate static files
 
-	```bash
-	hugo
-	```
+    ```bash
+    hugo
+    ```
 
 ## Amazon Web Services
 Amazon Web Services (AWS) is a collection of digital infrastructure services that developers can leverage when developing their applications. The services include computing, storage, database, and application synchronization (messaging and queuing). For this application, we will use:
@@ -99,7 +98,6 @@ This URL requests the `photo.jpg` object, which is stored at the root level in t
 
 ```
 http://my-bucket.s3-website-us-east-1.amazonaws.com/photo.jpg
-
 ```
 
 This URL requests the `docs/doc1.html` object in your bucket.

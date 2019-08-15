@@ -23,7 +23,7 @@ SSL/TLS works by using the combination of a public certificate and a private key
 
 ## Step 0: (Update) Address `net::ERR_CERT_COMMON_NAME_INVALID` in Chrome
 
-The following recommendations were made by [Victor Combal-Weiss](https://www.linkedin.com/in/victorcombalweiss/) on [Stack Overflow](https://stackoverflow.com/questions/43665243/invalid-self-signed-ssl-cert-subject-alternative-name-missing/56530824#56530824):
+The following recommendations were made by [Victor Combal-Weiss](https://www.linkedin.com/in/victorcombalweiss/):
 
 To fix the following error:
 

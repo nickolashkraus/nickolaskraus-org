@@ -14,7 +14,7 @@ googleAnalytics = "UA-115911814-1"
   siteName = "Nickolas Kraus"
   dateFormat = "January 2, 2006"
 
-[params.social]
+[[params.social]]
   email = "nickhkraus@gmail.com"
   github = "https://github.com/NickolasHKraus"
   linkedin = "https://linkedin.com/in/nickolas-kraus"

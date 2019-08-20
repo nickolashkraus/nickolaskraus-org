@@ -6,7 +6,7 @@
 #
 
 # change directory to project root
-cd /Users/nickolaskraus/Workspace/nickolaskraus-org/
+cd $HOME/Workspace/nickolaskraus-org/
 
 # set environment variables
 source $PWD/.aws/set-aws-env.sh

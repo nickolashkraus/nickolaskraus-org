@@ -218,24 +218,24 @@ If you want your website to be accessible via HTTPS on *both* the www subdomain 
 
 ```yaml
 CertificateManagerCertificate:
-	Type: AWS::CertificateManager::Certificate
-	Properties:
-		DomainName: !Ref DomainName
-		SubjectAlternativeNames:
-			- !Sub www.${DomainName}
-		ValidationMethod: DNS
+  Type: AWS::CertificateManager::Certificate
+  Properties:
+    DomainName: !Ref DomainName
+    SubjectAlternativeNames:
+      - !Sub 'www.${DomainName}'
+    ValidationMethod: DNS
 ```
 
 You will then be able to add the www subdomain to the CloudFront distribution:
 
 ```yaml
 CloudFrontDistribution:
-	Type: AWS::CloudFront::Distribution
-	Properties:
-		DistributionConfig:
-			Aliases:
-				- !Ref DomainName
-				- !Sub 'www.${DomainName}'
+  Type: AWS::CloudFront::Distribution
+  Properties:
+    DistributionConfig:
+      Aliases:
+        - !Ref DomainName
+        - !Sub 'www.${DomainName}'
 ```
 
 **Note**: DNS validation can be done manually via the AWS Management Console: **Certificate Manager** > **Create record in Route 53**.

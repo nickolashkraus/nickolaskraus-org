@@ -33,61 +33,61 @@ This solution has the following workflow.
 
 1. Create an AWS Lambda function using [`Zipfile`](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-zipfile) and the deployment S3 bucket:
 
-```yaml
-LambdaFunction:
-  Type: AWS::Lambda::Function
-  Properties:
-    Code:
-      # S3Bucket: !Ref LambdaS3Bucket
-      # S3Key: ‘lambda_function.zip’
-      # Use ZipFile to address ‘chicken and egg’ problem
-      ZipFile: |
-        def handler(event, context):
-          return
+    ```yaml
+    LambdaFunction:
+      Type: AWS::Lambda::Function
+      Properties:
+        Code:
+          # S3Bucket: !Ref LambdaS3Bucket
+          # S3Key: ‘lambda_function.zip’
+          # Use ZipFile to address ‘chicken and egg’ problem
+          ZipFile: |
+            def handler(event, context):
+              return
 
-LambdaS3Bucket:
-  Type: AWS::S3::Bucket
-  Properties:
-    AccessControl: AuthenticatedRead
-    BucketName: ‘${AWS::StackName}-lambda’
-    VersioningConfiguration:
-      Status: Enabled
-```
+    LambdaS3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        AccessControl: AuthenticatedRead
+        BucketName: ‘${AWS::StackName}-lambda’
+        VersioningConfiguration:
+          Status: Enabled
+    ```
 
-**Note**: The deployment S3 bucket is commented out for the first deployment.
+    **Note**: The deployment S3 bucket is commented out for the first deployment.
 
 2. Deploy the CloudFormation stack:
 
-```bash
-aws cloudformation deploy \
-  --stack-name $STACK_NAME \
-  --template-file template.yaml \
-  --parameter-overrides $(cat parameters.properties)
-```
+    ```bash
+    aws cloudformation deploy \
+      --stack-name $STACK_NAME \
+      --template-file template.yaml \
+      --parameter-overrides $(cat parameters.properties)
+    ```
 
 3. Deploy the AWS Lambda function to the deployment S3 bucket:
 
-```bash
-aws s3api put-object \
-  --body lambda_function.zip \
-  --bucket $STACK_NAME-lambda \
-  --key lambda_function.zip
-```
+    ```bash
+    aws s3api put-object \
+      --body lambda_function.zip \
+      --bucket $STACK_NAME-lambda \
+      --key lambda_function.zip
+    ```
 
 4. Uncomment the deployment S3 bucket ( [S3Bucket](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html#cfn-lambda-function-code-s3bucket)) in the Lambda function, comment out the Zipfile:
 
-```yaml
-LambdaFunction:
-  Type: AWS::Lambda::Function
-  Properties:
-    Code:
-      S3Bucket: !Ref LambdaS3Bucket
-      S3Key: ‘lambda_function.zip’
-      # Use ZipFile to address ‘chicken and egg’ problem
-      # ZipFile: |
-      #   def handler(event, context):
-      #     return
-```
+    ```yaml
+    LambdaFunction:
+      Type: AWS::Lambda::Function
+      Properties:
+        Code:
+          S3Bucket: !Ref LambdaS3Bucket
+          S3Key: ‘lambda_function.zip’
+          # Use ZipFile to address ‘chicken and egg’ problem
+          # ZipFile: |
+          #   def handler(event, context):
+          #     return
+    ```
 
 5. Redeploy the CloudFormation stack.
 
@@ -101,32 +101,32 @@ Serverless uses the same methodology, but in a seamless, deterministic way. Ther
 
 1. First, Serverless creates a CloudFormation template with only the deployment S3 bucket and deploys the CloudFormation stack:
 
-```bash
-Serverless: Packaging service...
-Serverless: Excluding development dependencies...
-Serverless: Creating Stack...
-Serverless: Checking Stack create progress...
-...
-Serverless: Stack create finished...
-```
+    ```bash
+    Serverless: Packaging service...
+    Serverless: Excluding development dependencies...
+    Serverless: Creating Stack...
+    Serverless: Checking Stack create progress...
+    ...
+    Serverless: Stack create finished...
+    ```
 
 2. Serverless then packages the AWS Lambda function and uploads the deployment package to S3:
 
-```bash
-Serverless: Uploading CloudFormation file to S3...
-Serverless: Uploading artifacts...
-...
-```
+    ```bash
+    Serverless: Uploading CloudFormation file to S3...
+    Serverless: Uploading artifacts...
+    ...
+    ```
 
 3. Any IAM Roles, Functions, Events and Resources are added to the AWS CloudFormation template and the CloudFormation stack is updated:
 
-```bash
-Serverless: Validating template...
-Serverless: Updating Stack...
-Serverless: Checking Stack update progress...
-...
-Serverless: Stack update finished...
-```
+    ```bash
+    Serverless: Validating template...
+    Serverless: Updating Stack...
+    Serverless: Checking Stack update progress...
+    ...
+    Serverless: Stack update finished...
+    ```
 
 Voilà! Painless AWS Lambda function deploys.
 

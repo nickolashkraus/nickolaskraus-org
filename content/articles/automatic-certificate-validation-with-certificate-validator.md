@@ -1,7 +1,7 @@
 ---
 title: "Automatic Certificate Validation with Certificate Validator"
-date: 2019-09-09T12:00:00-06:00
-draft: false
+date: 2019-10-20T12:00:00-06:00
+draft: true
 description: Certificate Validator is an AWS CloudFormation custom resource which facilitates AWS Certificate Manager (ACM) certificate validation via DNS.
 ---
 

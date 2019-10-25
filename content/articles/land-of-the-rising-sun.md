@@ -28,12 +28,12 @@ A [Suica](http://www.jreast.co.jp/e/pass/suica.html) is a prepaid e-money card f
 ### Bring an umbrella.
 The weather in Japan can fluctuate wildly over the course of the day. Having an umbrella on hand, or buying one there, is highly recommended. Like most everything in Japan, the logistics of having 9 million people carrying umbrellas on any given day have been scrupulously considered. Almost every establishment has an area to securely store your sodden parasol.
 
-## Things to Know
+## Things To Know
 * Don’t worry about restrooms. They are ubiquitous and very clean.
 * Nigiri, a thin slice of raw fish over pressed vinegared, rice should be handled from the rice whether that be with your hands or chopsticks.
 * People do not get going until 8AM or 9AM. If you want to experience something in peace and solitude, get going early.
 
-## Places to See
+## Places To See
 
 ### Meiji Jingu Shrine and Yoyogi Park
 Located in Shibuya, Tokyo, this experience offers a beautiful and tranquil stroll through the meandering paths of Yoyogi Park culminating in the imperial Meiji Jingu Shrine.
@@ -62,7 +62,7 @@ Luckily this experience requires a bit of physical exertion, so those of feeble 
 ### Kinkaku-ji Temple
 Beautiful, when not swamped with ogling tourists. Hit this one early in the day to allow for some reflection. If not, you will be stuck in a jostling flow of human cattle.
 
-## Places to Eat
+## Places To Eat
 
 ### Torikizoku
 Disregard the variable ratings on Google Reviews, this restaurant is actually quite good. Even an orthorexic like myself could find something clean and healthy to eat. Raw cabbage, tomatoes, chicken, and hard boiled eggs are all on the menu which is all under ¥400. The beer is also great.

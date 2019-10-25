@@ -184,7 +184,7 @@ Now when a *virtualenv* is activated all the Python packages that you install wi
 
 Congratulations! You are now well on your way to developing with virtual environments. However, we still need to install `pyenv` in order to quickly switch between Python versions similar to how we have done with `virtualenv` and `virtualenvwrapper`.
 
-### Install `pyenv`
+### Install `pyenv` and `pyenv-virtualenvwrapper`
 
 ```bash
 $ brew install pyenv pyenv-virtualenvwrapper

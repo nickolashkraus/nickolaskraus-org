@@ -28,5 +28,8 @@ googleAnalytics = "UA-115911814-1"
     name = "Articles"
     url  = "/articles"
 [[menu.main]]
+    name = "Projects"
+    url  = "/projects"
+[[menu.main]]
     name = "Resume"
     url  = "/resume.pdf"

@@ -1,8 +1,9 @@
 ---
-title: "My Local Development Setup"
+title: "My Local Development Setup - 2018"
 date: 2018-10-21T12:00:00-06:00
 draft: false
 description: A comprehensive walk through of the tools and productivity modifications that I use.
+aliases: ["./my-local-development-setup"]
 ---
 
 I like my local development setup to be lean and automated. This allows me to get up and running with a new machine in under an hour. The following is a comprehensive walk through of the tools and productivity modifications that I use.

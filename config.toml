@@ -33,3 +33,6 @@ googleAnalytics = "UA-115911814-1"
 [[menu.main]]
     name = "Resume"
     url  = "/resume.pdf"
+[[menu.main]]
+    name = "Transcripts"
+    url  = "/transcripts"

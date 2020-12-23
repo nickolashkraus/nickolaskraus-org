@@ -28,17 +28,19 @@ git add . && git commit -m "Update submodules"
 
 Currently, this repository is pinned to Hugo v0.55.4 due to a rendering [issue](https://github.com/gohugoio/hugo/issues/6040) of lists with code blocks introduced in Hugo v0.55.5.
 
-To install Hugo v0.55.4 via Homebrew:
+To install Hugo v0.55.4 via `go get`:
 
 ```bash
 # remove symlinks for Hugo formula
 brew unlink hugo
 
-# install Hugo v0.55.4
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/cf3219506fd28f7133041b74761e8025418435a3/Formula/hugo.rb
+# install Hugo via `go get`
+go get -v github.com/gohugoio/hugo
 
-# create symlinks for Hugo v0.55.4
-brew switch hugo 0.55.4
+# checkout version v0.55.4
+cd $GOPATH/src/github.com/gohugoio/hugo
+git checkout v0.55.4
+go install
 
 # confirm version
 hugo version

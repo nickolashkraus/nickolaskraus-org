@@ -10,9 +10,9 @@ description: This is part one of a three part series on how to install macOS Big
 ## Overview
 This is part one of a three part series on how to install macOS Big Sur and Arch Linux on a MacBookPro11,3:
 
-* [Installing Arch Linux on a MacBook Pro - Part 1](articles/installing-arch-linux-on-a-macbookpro-part-1/)
-* [Installing Arch Linux on a MacBook Pro - Part 2](articles/installing-arch-linux-on-a-macbookpro-part-2/)
-* [Installing Arch Linux on a MacBook Pro - Part 3](articles/installing-arch-linux-on-a-macbookpro-part-3/)
+* [Installing Arch Linux on a MacBook Pro - Part 1](https://nickolaskraus.org/articles/installing-arch-linux-on-a-macbookpro-part-1/)
+* [Installing Arch Linux on a MacBook Pro - Part 2](https://nickolaskraus.org/articles/installing-arch-linux-on-a-macbookpro-part-2/)
+* [Installing Arch Linux on a MacBook Pro - Part 3](https://nickolaskraus.org/articles/installing-arch-linux-on-a-macbookpro-part-3/)
 
 ## Requirements
 * 1x - MacBookPro11,3
@@ -93,4 +93,4 @@ After completion, macOS may complain that, *”The disk you inserted was not rea
 2. Press and hold the Option (⌥) key.
 3. Select the bootable installer for Arch Linux.
 
-Continue to [Installing Arch Linux on a MacBook Pro - Part 2](articles/installing-arch-linux-on-a-macbookpro-part-2/)
+Continue to [Installing Arch Linux on a MacBook Pro - Part 2](https://nickolaskraus.org/articles/installing-arch-linux-on-a-macbookpro-part-2/)

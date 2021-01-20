@@ -62,23 +62,23 @@ First, [download](https://www.archlinux.org/download/) the Arch Linux ISO image 
 
 1. Identify the USB device.
 
-```bash
-diskutil list
-```
+    ```bash
+    diskutil list
+    ```
 
-Your USB device will appear as something similar to `/dev/diskX (external, physical)`.
+    Your USB device will appear as something similar to `/dev/diskX (external, physical)`.
 
 2. A USB device is normally auto-mounted in macOS. You have to unmount (not eject) it before block-writing to it with `dd`.
 
-```bash
-diskutil unmountDisk /dev/diskX
-```
+    ```bash
+    diskutil unmountDisk /dev/diskX
+    ```
 
 3. Copy the ISO image file to the device. The `dd` command is similar to its Linux counterpart, but notice the `r` before `disk`. This is for raw mode, which makes the transfer much faster:
 
-```bash
-dd if=path/to/arch.iso of=/dev/rdiskX bs=1m
-```
+    ```bash
+    dd if=path/to/arch.iso of=/dev/rdiskX bs=1m
+    ```
 
 After completion, macOS may complain that, *”The disk you inserted was not readable by this computer”*. Select **Ignore**. The USB device will now be bootable.
 

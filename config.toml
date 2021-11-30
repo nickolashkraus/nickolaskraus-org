@@ -36,3 +36,8 @@ googleAnalytics = "UA-115911814-1"
 [[menu.main]]
     name = "Transcripts"
     url  = "/transcripts"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

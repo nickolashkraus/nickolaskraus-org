@@ -1,6 +1,6 @@
 # [nickolaskraus.org](https://nickolaskraus.org)
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/NickolasHKraus/nickolaskraus-org/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/NickolasHKraus/nickolaskraus-org/blob/master/LICENSE)
 
 [nickolaskraus.org](https://nickolaskraus.org) is my personal website. It is generated using [Hugo](https://gohugo.io) and hosted on [AWS](https://aws.amazon.com).
 

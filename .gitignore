@@ -5,5 +5,5 @@
 .DS_Store
 
 # Hugo
-public/
-resources/
+site/public/
+site/resources/

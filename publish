@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+# DESCRIPTION
+# Publish content to nickolaskraus.org.
+#
+# USAGE
+#
+#   publish
+
+function usage {
+  echo 'usage: publish'
+}
+
+# Change directory to Terraform module
+pushd "$(pwd)/tf" >/dev/null || exit
+
+# Set S3 bucket
+S3_BUCKET_ROOT=$(terraform output s3_root_id | tr -d \")
+
+# Set CloudFront distribution ID
+CF_DISTRIBUTION_ID=$(terraform output cf_distribution_id | tr -d \")
+
+popd >/dev/null || exit
+
+# Change directory to Hugo site
+pushd "$(pwd)/site" >/dev/null || exit
+
+# Remove static files
+rm -rf "${PWD}/public"
+
+# Build static files
+hugo
+
+# Remove files from S3
+aws s3 rm "s3://${S3_BUCKET_ROOT}" --recursive
+
+# Sync files with S3
+aws s3 sync --acl "public-read" public/ "s3://${S3_BUCKET_ROOT}"
+
+# Invalidate CloudFront cache
+aws cloudfront create-invalidation --distribution-id "${CF_DISTRIBUTION_ID}" --paths "/*"
+
+popd >/dev/null || exit

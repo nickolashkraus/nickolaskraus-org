@@ -32,6 +32,7 @@ override.tf.json
 .terraform.lock.hcl
 
 # Hugo
+.hugo_build.lock
 site/public/
 site/resources/
 

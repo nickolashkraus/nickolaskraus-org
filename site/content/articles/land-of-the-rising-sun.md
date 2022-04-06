@@ -1,6 +1,6 @@
 ---
 title: "Land of the Rising Sun"
-date: 2018-07-01T12:00:00-06:00
+date: 2018-07-01T00:00:00-06:00
 draft: false
 description: A reflection on my time in Japan.
 ---

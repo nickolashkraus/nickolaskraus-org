@@ -1,6 +1,6 @@
 ---
 title: "Hosting a Static Website with Hugo and Terraform"
-date: 2021-12-27T12:00:00-06:00
+date: 2021-12-27T00:00:00-06:00
 draft: false
 description: This article details how to create a static website with Hugo and Terraform.
 ---

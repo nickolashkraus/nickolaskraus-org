@@ -1,6 +1,6 @@
 ---
 title: "The Art of Learning"
-date: 2018-06-10T12:00:00-06:00
+date: 2018-06-10T00:00:00-06:00
 draft: false
 description: A review and reflection on Josh Waitzkin's book, The Art of Learning.
 ---

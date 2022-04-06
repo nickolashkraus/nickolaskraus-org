@@ -1,6 +1,6 @@
 ---
 title: "Understanding Amazon Security Groups - Part 1"
-date: 2019-06-16T12:00:00-06:00
+date: 2019-06-16T00:00:00-06:00
 draft: false
 description: A security group acts as a virtual firewall that controls the traffic for one or more instances. This article discusses the important concepts for working with security groups in AWS.
 ---

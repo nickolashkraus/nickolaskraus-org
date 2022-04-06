@@ -1,6 +1,6 @@
 ---
 title: "Installing Arch Linux on a MacBookPro - Part 2"
-date: 2021-01-08T12:00:00-06:00
+date: 2021-01-08T00:00:00-06:00
 draft: false
 description: This is part two of a three part series on how to install macOS Big Sur and Arch Linux on a MacBookPro11,3.
 ---

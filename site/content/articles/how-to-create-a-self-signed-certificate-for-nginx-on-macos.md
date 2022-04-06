@@ -1,6 +1,6 @@
 ---
 title: "How to Create a Self-Signed Certificate for NGINX on macOS"
-date: 2018-02-25T12:00:00-06:00
+date: 2018-02-25T00:00:00-06:00
 draft: false
 description: In this guide, I will walk through how to create a self-signed SSL/TLS certificate for an NGINX web server on macOS.
 ---

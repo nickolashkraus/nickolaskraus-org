@@ -1,6 +1,6 @@
 ---
 title: "Seamless AWS Lambda Function Deployments with Serverless"
-date: 2019-10-06T12:00:00-06:00
+date: 2019-10-06T00:00:00-06:00
 draft: false
 description: Using Serverless for seamless AWS Lambda deployments.
 ---

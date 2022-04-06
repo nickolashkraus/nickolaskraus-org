@@ -1,6 +1,6 @@
 ---
 title: "Understanding Amazon Security Groups - Part 2"
-date: 2019-06-23T12:00:00-06:00
+date: 2019-06-23T00:00:00-06:00
 draft: false
 description: In this article, we deepen our understanding of Amazon security groups. In addition, we take a look at the differences between EC2-Classic and EC2-VPC security groups.
 ---

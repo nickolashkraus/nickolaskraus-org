@@ -1,6 +1,6 @@
 ---
 title: "Hosting a Static Website with Hugo and AWS"
-date: 2018-02-18T12:00:00-06:00
+date: 2018-02-18T00:00:00-06:00
 draft: false
 description: This article details the steps for creating and hosting a static website on AWS. I provide both the manual steps (via the Amazon Management Console) and the semi-automated steps using AWS CLI.
 ---

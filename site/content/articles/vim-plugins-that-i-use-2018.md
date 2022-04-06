@@ -1,6 +1,6 @@
 ---
 title: "Vim Plugins That I Use - 2018"
-date: 2018-10-28T12:00:00-06:00
+date: 2018-10-28T00:00:00-06:00
 draft: false
 description: A complete guide to the Vim plugins that I use.
 aliases: ["./vim-plugins-that-i-use"]

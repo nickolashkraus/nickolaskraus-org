@@ -1,6 +1,6 @@
 ---
 title: "Creating a Static Website using CloudFormation"
-date: 2019-02-10T12:00:00-06:00
+date: 2019-02-10T00:00:00-06:00
 draft: false
 description: This article details how to create a static website using CloudFormation.
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Hugo Aliases"
-date: 2019-11-10T12:00:00-06:00
+date: 2019-11-10T00:00:00-06:00
 draft: false
 description: Use Hugo aliases to create redirects to your page from other URLs.
 ---

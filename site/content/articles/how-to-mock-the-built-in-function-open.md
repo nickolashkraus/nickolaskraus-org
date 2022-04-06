@@ -1,6 +1,6 @@
 ---
 title: "How to Mock the Built-in Function open()"
-date: 2018-03-18T12:00:00-06:00
+date: 2018-03-18T00:00:00-06:00
 draft: false
 description: This article provides an example for mocking the Python built-in function open() using the mock library.
 ---

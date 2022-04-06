@@ -1,6 +1,6 @@
 ---
 title: "Creating an Amazon API Gateway with a Mock Integration using CloudFormation"
-date: 2019-01-27T12:00:00-06:00
+date: 2019-01-27T00:00:00-06:00
 draft: false
 description: Amazon API Gateway is a highly useful and powerful tool. However, mastering its functionality is not easy. This article attempts to elucidate the major concepts of Amazon API Gateway by guiding the reader through the creation of an API Gateway with a mock integration.
 ---

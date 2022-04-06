@@ -1,6 +1,6 @@
 ---
 title: "Creating an Amazon API Gateway with a Lambda Integration using CloudFormation"
-date: 2019-02-03T12:00:00-06:00
+date: 2019-02-03T00:00:00-06:00
 draft: false
 description: A typical use case for Amazon API Gateway is to use it in conjunction with an AWS Lambda function. In this article, we will create an API Gateway with a Lambda integration.
 ---

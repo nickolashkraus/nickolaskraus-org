@@ -1,6 +1,6 @@
 ---
 title: "My Local Development Setup - 2018"
-date: 2018-10-21T12:00:00-06:00
+date: 2018-10-21T00:00:00-06:00
 draft: false
 description: A comprehensive walk through of the tools and productivity modifications that I use.
 aliases: ["./my-local-development-setup"]

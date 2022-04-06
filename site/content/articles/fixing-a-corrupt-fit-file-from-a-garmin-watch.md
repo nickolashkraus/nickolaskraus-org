@@ -1,6 +1,6 @@
 ---
 title: "Fixing a corrupt FIT file from a Garmin watch"
-date: 2022-04-05T12:00:00-06:00
+date: 2022-04-05T00:00:00-06:00
 draft: false
 description: Steps for fixing a corrupt FIT file from a Garmin watch.
 ---

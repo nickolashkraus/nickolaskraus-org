@@ -97,16 +97,16 @@ description: Race results from my 2021 triathlon season.
 ## Distances
 
 ### Sprint
-* **Swim**: 0.47 mi (750 m)
-* **Bike**: 12 mi (20 km)
-* **Run**: 3.1 mi (5 km)
+* **Swim**: 0.5 mi (750m)
+* **Bike**: 12.4 mi (20km)
+* **Run**: 3.1 mi (5km)
 
 ### Olympic
-* **Swim**: 0.93 mi (1.5 km)
-* **Bike**: 25 mi (40 km)
-* **Run**: 6.2 mi (10 km)
+* **Swim**: 0.93 mi (1.5km)
+* **Bike**: 24.8 mi (40km)
+* **Run**: 6.2 mi (10km)
 
 ### IRONMAN 70.3
-* **Swim**: 1.2 mi (1.9 km)
-* **Bike**: 56 mi (90 km)
-* **Run**: 13.1 mi (21.1 km)
+* **Swim**: 1.2 mi (1.9km)
+* **Bike**: 56 mi (90km)
+* **Run**: 13.1 mi (21.1km)

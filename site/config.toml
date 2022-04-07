@@ -16,9 +16,13 @@ googleAnalytics = "UA-115911814-1"
 
 [[params.social]]
   email = "nickhkraus@gmail.com"
+  garmin = "https://connect.garmin.com/modern/profile/6b22dde1-552e-45d4-9608-c5fe6b6d3ea4"
   github = "https://github.com/NickolasHKraus"
+  instagram = "https://www.instagram.com/nickolashkraus"
   linkedin = "https://linkedin.com/in/nickolas-kraus"
+  rss = "http://localhost:1313/index.xml"
   stackoverflow = "https://stackoverflow.com/users/9659079/nickolashkraus"
+  strava = "https://www.strava.com/athletes/23618436"
   twitter = "https://twitter.com/NickolasHKraus"
 
 [[menu.main]]

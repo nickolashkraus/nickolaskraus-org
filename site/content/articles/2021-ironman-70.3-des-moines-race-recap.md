@@ -26,7 +26,7 @@ description: 2021 IRONMAN 70.3 Des Moines Race Recap
 
 ## Race Recap
 
-Overall, my performance at 2021 IRONMAN 70.3 Des Moines was OK.
+Overall, my performance at IRONMAN 70.3 Des Moines was OK.
 
 ### Swim
 

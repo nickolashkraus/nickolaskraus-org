@@ -24,7 +24,7 @@ description: 2021 IRONMAN 70.3 Arizona Race Recap
 
 ## Race Recap
 
-I was satisfied with my performance at 2021 IRONMAN 70.3 Arizona.
+I was satisfied with my performance at IRONMAN 70.3 Arizona.
 
 ### Swim
 Aiming not to repeat my abysmal performance at IRONMAN 70.3 Des Moines, I went very easy on the swim. My sighting was fairly good and I got into a groove about 500 yards in. Tens of thousands of yards swimming long-course over the summer prepared me for the hypoxia and panic that most feel at the start of the swim. I simply slowed my tempo, got into a rhythm, and was able to relax into a comfortable 1:45 min/100 yd pace.

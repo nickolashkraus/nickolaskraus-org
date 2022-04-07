@@ -26,20 +26,20 @@ googleAnalytics = "UA-115911814-1"
   twitter = "https://twitter.com/NickolasHKraus"
 
 [[menu.main]]
-    name = "About"
-    url  = "/about"
+  name = "About"
+  url  = "/about"
 [[menu.main]]
-    name = "Articles"
-    url  = "/articles"
+  name = "Articles"
+  url  = "/articles"
 [[menu.main]]
-    name = "Projects"
-    url  = "/projects"
+  name = "Projects"
+  url  = "/projects"
 [[menu.main]]
-    name = "Resume"
-    url  = "/resume.pdf"
+  name = "Resume"
+  url  = "/resume.pdf"
 [[menu.main]]
-    name = "Transcripts"
-    url  = "/transcripts"
+  name = "Transcripts"
+  url  = "/transcripts"
 
 [markup]
   [markup.goldmark]

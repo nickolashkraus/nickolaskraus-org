@@ -15,6 +15,7 @@ provider "aws" {
 }
 
 module "terraform_aws_static_website" {
-  source      = "git@github.com:infrable-io/terraform-aws-static-website.git"
-  domain_name = "nickolaskraus.org"
+  source               = "git@github.com:infrable-io/terraform-aws-static-website.git"
+  domain_name          = "nickolaskraus.org"
+  redirect_domain_name = "nickolaskraus.io"
 }

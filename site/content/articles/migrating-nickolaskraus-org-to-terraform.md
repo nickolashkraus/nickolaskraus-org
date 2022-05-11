@@ -3,6 +3,7 @@ title: "Migrating NickolasKraus.org to Terraform"
 date: 2022-01-03T00:00:00-06:00
 draft: false
 description: A walk through of the steps taken to migrate NickolasKraus.org to Terraform.
+aliases: ["./migrating-nickolaskraus.org-to-terraform"]
 ---
 
 Back in 2018, I used the AWS CLI and [a collection of JSON files and Bash scripts](https://github.com/NickolasHKraus/nickolaskraus-org/tree/11c438a71905697bdb5fcd172fed95aa3d1cbf8a/.aws) to create the infrastructure for NickolasKraus.org. Since then, I have expanded by repetoire of Infrastructure-as-Code (IaC) tooling to include both CloudFormation and Terraform. With each new tool, I put together an article detailing how to create a static website on AWS. These articles can be found [here](https://nickolaskraus.org/articles/hosting-a-static-website-with-hugo-and-cloudformation/) and [here](https://nickolaskraus.org/articles/hosting-a-static-website-with-hugo-and-terraform/).

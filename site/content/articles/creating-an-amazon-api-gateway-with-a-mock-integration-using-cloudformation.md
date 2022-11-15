@@ -437,4 +437,4 @@ When API Gateway is integrated with AWS Lambda or another AWS service, such as A
 }
 ```
 
-The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [NickolasHKraus/cloudformation-templates](https://github.com/NickolasHKraus/cloudformation-templates).
+The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [nickolashkraus/cloudformation-templates](https://github.com/nickolashkraus/cloudformation-templates).

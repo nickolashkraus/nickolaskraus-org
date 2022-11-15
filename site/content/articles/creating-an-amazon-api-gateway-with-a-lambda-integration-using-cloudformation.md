@@ -444,4 +444,4 @@ brew install httpie
 ## Conclusion
 You now have an API Gateway with a Lambda proxy integration! Although this API and Lambda function do not do anything useful, it provides a pattern for architecting a system that is more robust. Other AWS resources are not at your disposal through the use of the Lambda function and are accessible via a configurable and publicly accessible API Gateway.
 
-The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [NickolasHKraus/cloudformation-templates](https://github.com/NickolasHKraus/cloudformation-templates).
+The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [nickolashkraus/cloudformation-templates](https://github.com/nickolashkraus/cloudformation-templates).

@@ -204,7 +204,7 @@ Content of DNS Record is: {Name: _x1.static-website.com.,Type: CNAME,Value: _x2.
 
 Where `x1` and `x2` are random hexadecimal strings.
 
-To automate DNS validation, you can use [this](https://github.com/NickolasHKraus/cloudformation-templates/blob/master/static-website/dns-validation.sh) script.
+To automate DNS validation, you can use [this](https://github.com/nickolashkraus/cloudformation-templates/blob/master/static-website/dns-validation.sh) script.
 
 ```bash
 ./dns-validation.sh $DOMAIN_NAME $STACK_NAME
@@ -308,7 +308,7 @@ To ensure that the cached content on the CloudFront distribution is invalidated 
 aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION_ID --paths "/*"
 ```
 
-The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [NickolasHKraus/cloudformation-templates](https://github.com/NickolasHKraus/cloudformation-templates).
+The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [nickolashkraus/cloudformation-templates](https://github.com/nickolashkraus/cloudformation-templates).
 
 ## Limitations
 

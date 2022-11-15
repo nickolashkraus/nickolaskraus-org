@@ -34,7 +34,7 @@ Hugo is a static site generator. The purpose of a static website generator is to
 
 4. Choose a theme
 
-    Pre-made themes can be found [here](https://themes.gohugo.io/). This website uses a custom theme that I created, which can be found [here](https://github.com/NickolasHKraus/black-and-light-2).
+    Pre-made themes can be found [here](https://themes.gohugo.io/). This website uses a custom theme that I created, which can be found [here](https://github.com/nickolashkraus/black-and-light-2).
 
     ```bash
     git submodule add git@github.com:<username>/<theme>.git themes/<theme>
@@ -420,7 +420,7 @@ Content of DNS Record is: {Name: _x1.static-website.com.,Type: CNAME,Value: _x2.
 
 Where `x1` and `x2` are random hexadecimal strings.
 
-To automate DNS validation, you can use [this](https://github.com/NickolasHKraus/cloudformation-templates/blob/master/static-website-hugo/dns-validation.sh) script.
+To automate DNS validation, you can use [this](https://github.com/nickolashkraus/cloudformation-templates/blob/master/static-website-hugo/dns-validation.sh) script.
 
 ```bash
 ./dns-validation.sh $DOMAIN_NAME $STACK_NAME
@@ -480,4 +480,4 @@ Navigate to your [static website](https://static-website.com/)!
 
 ## Conclusion
 
-The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [NickolasHKraus/cloudformation-templates](https://github.com/NickolasHKraus/cloudformation-templates).
+The code for this CloudFormation stack, as well as other CloudFormation templates can be found at [nickolashkraus/cloudformation-templates](https://github.com/nickolashkraus/cloudformation-templates).

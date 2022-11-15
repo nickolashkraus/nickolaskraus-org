@@ -8,7 +8,7 @@ aliases: ["./my-local-development-setup"]
 
 I like my local development setup to be lean and automated. This allows me to get up and running with a new machine in under an hour. The following is a comprehensive walk through of the tools and productivity modifications that I use.
 
-This walk through references several configuration files. These configuration files (typically referred to as *dotfiles*) can be found [here](https://github.com/NickolasHKraus/dotfiles)
+This walk through references several configuration files. These configuration files (typically referred to as *dotfiles*) can be found [here](https://github.com/nickolashkraus/dotfiles)
 
 ## macOS
 
@@ -70,7 +70,7 @@ xcode-select --install
 ```
 
 ### Configuration
-* [.gitconfig](https://github.com/NickolasHKraus/dotfiles/blob/master/.gitconfig)
+* [.gitconfig](https://github.com/nickolashkraus/dotfiles/blob/master/.gitconfig)
 
 ```bash
 ln -s ~/path/to/remote/.gitconfig ~/.gitconfig
@@ -89,15 +89,15 @@ rm iTerm2-3_2_7.zip
 ```
 
 ### Configuration
-* [com.googlecode.iterm2.plist](https://github.com/NickolasHKraus/dotfiles/blob/master/com.googlecode.iterm2.plist)
-* [colorscheme.itermcolors](https://github.com/NickolasHKraus/dotfiles/blob/master/colorscheme.itermcolors)
+* [com.googlecode.iterm2.plist](https://github.com/nickolashkraus/dotfiles/blob/master/com.googlecode.iterm2.plist)
+* [colorscheme.itermcolors](https://github.com/nickolashkraus/dotfiles/blob/master/colorscheme.itermcolors)
 
 To set the [plist](https://en.wikipedia.org/wiki/Property_list), go to **Preferences** > **General**. Under **Preferences**, set *Load preferences from a custom folder of URL* to the location of `com.googlecode.iterm2.plist`.
 
 To set the color scheme, go to **Preferences** > **Profiles** > **Colors** > **Color Presets...** > **Import...** and import `colorscheme.itermcolors`. *colorscheme* will then appear under **Color Presets...**.
 
 ## Zsh
-[Oh My Zsh](https://ohmyz.sh/) is an open source, community-driven framework for managing your Zsh configuration. I use a [fork](https://github.com/NickolasHKraus/oh-my-zsh) containing my custom amuse theme.
+[Oh My Zsh](https://ohmyz.sh/) is an open source, community-driven framework for managing your Zsh configuration. I use a [fork](https://github.com/nickolashkraus/oh-my-zsh) containing my custom amuse theme.
 
 ### Installation
 
@@ -109,13 +109,13 @@ Or use:
 
 ```bash
 cd ~
-git clone https://github.com/NickolasHKraus/oh-my-zsh .oh-my-zsh
+git clone https://github.com/nickolashkraus/oh-my-zsh .oh-my-zsh
 cd .oh-my-zsh
 git remote add upstream git@github.com:robbyrussell/oh-my-zsh.git
 ```
 
 ### Configuration
-* [.zshrc](https://github.com/NickolasHKraus/dotfiles/blob/master/.zshrc)
+* [.zshrc](https://github.com/nickolashkraus/dotfiles/blob/master/.zshrc)
 
 ```bash
 ln -s ~/path/to/remote/.zshrc ~/.zsrhc
@@ -175,7 +175,7 @@ brew install tmux
 ```
 
 ### Configuration
-* [.tmux.conf](https://github.com/NickolasHKraus/dotfiles/blob/master/.tmux.conf)
+* [.tmux.conf](https://github.com/nickolashkraus/dotfiles/blob/master/.tmux.conf)
 
 ```bash
 ln -s ~/path/to/remote/.tmux.conf ~/.tmux.conf
@@ -191,7 +191,7 @@ brew install vim
 ```
 
 ### Configuration
-* [.vimrc](https://github.com/NickolasHKraus/dotfiles/blob/master/.vimrc)
+* [.vimrc](https://github.com/nickolashkraus/dotfiles/blob/master/.vimrc)
 
 ```bash
 ln -s ~/path/to/remote/.vimrc ~/.vimrc
@@ -223,7 +223,7 @@ brew install mpv
 ```
 
 ### Configuration files
-* [mpv.conf](https://github.com/NickolasHKraus/dotfiles/blob/master/mpv.conf)
+* [mpv.conf](https://github.com/nickolashkraus/dotfiles/blob/master/mpv.conf)
 
 ```bash
 ln -s ~/path/to/remote/mpv.conf ~/.config/mpv/mpv.conf
@@ -242,7 +242,7 @@ rm Spectacle+1.2.zip
 ```
 
 ### Configuration
-* [Shortcuts.json](https://github.com/NickolasHKraus/dotfiles/blob/master/Shortcuts.json)
+* [Shortcuts.json](https://github.com/nickolashkraus/dotfiles/blob/master/Shortcuts.json)
 
 ```bash
 ln -s ~/path/to/remote/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
@@ -258,7 +258,7 @@ brew install ag
 ```
 
 ### Configuration
-* [.agignore](https://github.com/NickolasHKraus/dotfiles/blob/master/.agignore)
+* [.agignore](https://github.com/nickolashkraus/dotfiles/blob/master/.agignore)
 
 ```bash
 ln -s ~/path/to/remote/.agignore ~/.agignore

@@ -34,9 +34,9 @@ The following is a catalog of the Vim plugins that I use and how to use them. Th
 * [vim-colors-solarized]({{< ref "#vim-colors-solarized" >}})
 * [vim-gitgutter]({{< ref "#vim-gitgutter" >}})
 
-While reading this article, you may also find my [`.vimrc`](https://github.com/NickolasHKraus/dotfiles/blob/master/.vimrc) helpful. Before we dive into Vim packages, its prudent to discuss how to manage them. I preferred to use Vundle.
+While reading this article, you may also find my [`.vimrc`](https://github.com/nickolashkraus/dotfiles/blob/master/.vimrc) helpful. Before we dive into Vim packages, its prudent to discuss how to manage them. I preferred to use Vundle.
 
-**Note**: This article goes into great detail about each plugin. If you simply want to install these plugins and get to work, copy my [`.vimrc`](https://github.com/NickolasHKraus/dotfiles/blob/master/.vimrc) and run:
+**Note**: This article goes into great detail about each plugin. If you simply want to install these plugins and get to work, copy my [`.vimrc`](https://github.com/nickolashkraus/dotfiles/blob/master/.vimrc) and run:
 
 ```bash
 vim +PluginInstall +qall
@@ -770,7 +770,7 @@ If you are using a terminal emulator that supports 256 colors and do not want to
 let g:solarized_termcolors=256
 ```
 
-I use a custom terminal palette with iTerm2 which emulates the degraded 256 colorscheme. It can be found [here](https://github.com/NickolasHKraus/dotfiles/blob/master/colorscheme.itermcolors).
+I use a custom terminal palette with iTerm2 which emulates the degraded 256 colorscheme. It can be found [here](https://github.com/nickolashkraus/dotfiles/blob/master/colorscheme.itermcolors).
 
 ### vim-gitgutter {#vim-gitgutter}
 [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)

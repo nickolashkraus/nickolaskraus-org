@@ -6,7 +6,7 @@ description: A walk through of the steps taken to migrate NickolasKraus.org to T
 aliases: ["./migrating-nickolaskraus.org-to-terraform"]
 ---
 
-Back in 2018, I used the AWS CLI and [a collection of JSON files and Bash scripts](https://github.com/NickolasHKraus/nickolaskraus-org/tree/11c438a71905697bdb5fcd172fed95aa3d1cbf8a/.aws) to create the infrastructure for NickolasKraus.org. Since then, I have expanded by repetoire of Infrastructure-as-Code (IaC) tooling to include both CloudFormation and Terraform. With each new tool, I put together an article detailing how to create a static website on AWS. These articles can be found [here](https://nickolaskraus.org/articles/hosting-a-static-website-with-hugo-and-cloudformation/) and [here](https://nickolaskraus.org/articles/hosting-a-static-website-with-hugo-and-terraform/).
+Back in 2018, I used the AWS CLI and [a collection of JSON files and Bash scripts](https://github.com/nickolashkraus/nickolaskraus-org/tree/11c438a71905697bdb5fcd172fed95aa3d1cbf8a/.aws) to create the infrastructure for NickolasKraus.org. Since then, I have expanded by repetoire of Infrastructure-as-Code (IaC) tooling to include both CloudFormation and Terraform. With each new tool, I put together an article detailing how to create a static website on AWS. These articles can be found [here](https://nickolaskraus.org/articles/hosting-a-static-website-with-hugo-and-cloudformation/) and [here](https://nickolaskraus.org/articles/hosting-a-static-website-with-hugo-and-terraform/).
 
 Now in 2022, I have decided to put what I've learned into practice by migrating NickolasKraus.org to Terraform. This article provides a walk through of the steps taken to accomplish this task.
 
@@ -19,7 +19,7 @@ This is commonly done using the [S3 backend](https://www.terraform.io/language/s
 For my purposes, I chose to create this infrastructure (S3 bucket and DynamoDB table) via CloudFormation, however this needn't be the case. Terraform offers several other options for storing state, Amazon S3 being only one of many.
 
 The repository for creating the S3 bucket and DynamoDB table can be found here:
-* [NickolasHKraus/nhk-terraform-state](https://github.com/NickolasHKraus/nhk-terraform-state)
+* [nickolashkraus/nhk-terraform-state](https://github.com/nickolashkraus/nhk-terraform-state)
 
 ## Importing existing infrastructure into Terraform state
 

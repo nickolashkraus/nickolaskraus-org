@@ -40,7 +40,7 @@ To use this module the following files are required:
 * `main.tf`
 * `outputs.tf`
 
-An example Terraform module can be found [here](https://github.com/NickolasHKraus/static-website-com).
+An example Terraform module can be found [here](https://github.com/nickolashkraus/static-website-com).
 
 ### Deploying the Terraform module
 
@@ -64,7 +64,7 @@ terraform apply
 
 ## Publishing content
 
-This can be accomplished with a simple script. See `publish` in [NickolasHKraus/static-website-com](https://github.com/NickolasHKraus/static-website-com).
+This can be accomplished with a simple script. See `publish` in [nickolashkraus/static-website-com](https://github.com/nickolashkraus/static-website-com).
 
 The exact steps provided in this article were used to deploy [static-website.com](https://static-website.com/)!
 

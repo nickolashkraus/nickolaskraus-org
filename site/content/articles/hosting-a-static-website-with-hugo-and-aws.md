@@ -33,7 +33,7 @@ Hugo is a static site generator. The purpose of a static website generator is to
 
 4. Choose a theme
 
-    Pre-made themes can be found [here](https://themes.gohugo.io/). This website uses a custom theme that I created, which can be found [here](https://github.com/NickolasHKraus/black-and-light-2).
+    Pre-made themes can be found [here](https://themes.gohugo.io/). This website uses a custom theme that I created, which can be found [here](https://github.com/nickolashkraus/black-and-light-2).
 
     ```bash
     git submodule add git@github.com:<username>/<theme>.git themes/<theme>
@@ -125,7 +125,7 @@ Amazon Route 53 can be used to fulfill all three functions, however in this case
 ## Setup
 The following will provide a painfully detailed walk-through for configuring AWS. I provide both the manual process (via the AWS Management Console) and through the use of the AWS Command Line Interface. It is wise to have the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/) handy when executing the commands, so you know what everything is doing. When using the AWS CLI, the goal is to replicate the configuration that we obtained using the AWS Management Console.
 
-To simplify the AWS CLI commands, I use environment variables set using a shell script. This script as well as the JSON files used to configure the various AWS services can be found in the GitHub [repository](https://github.com/NickolasHKraus/nickolaskraus-org) for this website under `.aws`.
+To simplify the AWS CLI commands, I use environment variables set using a shell script. This script as well as the JSON files used to configure the various AWS services can be found in the GitHub [repository](https://github.com/nickolashkraus/nickolaskraus-org) for this website under `.aws`.
 
 ### Step 0: Prerequisites
 
